@@ -76,3 +76,356 @@ create m.txt n
 create f l.txt
 copy m.txt f
 help
+exit
+help
+create erf.txt erfanam
+help
+create shab.txt shabnamam
+help
+create erf.txt hhhh
+run erf.txt
+pwd
+pwd
+run Operating System.py
+run manage.oy
+run manage.py
+pwd
+help
+diw
+diw
+dir
+cdup
+cd D:
+cd D
+cd C
+help
+pwd
+dir
+mkdir an
+list
+dir
+cd an
+pwd
+creat an.py print("an omade")
+creat an.py print("anomade")
+create an.py print("an omade")
+create an.py print("anomade")
+dir
+run an.py
+run an.py
+dir
+cdup
+cdw
+pwd
+cd an
+cdup
+pwd
+cd an
+dir
+help
+create an1.py print("an1omade")
+run an1.py
+help
+dir
+delete an1.py
+dir
+rename an.py khob.py
+dir
+read khob.py
+create new.txt hichi
+dir
+read new.txt
+copy khob.py new.txt
+help
+dir
+help
+mkdir erfolder
+dir
+cd erfolder
+dir
+create er.py print("salam")
+dir
+run er.py
+read er.py
+copy er.py er.txt
+dir
+read er.txt
+run er.txt
+create shab.txt shab
+dir
+find shab
+cdup
+find shab
+pwd
+cd erfolder
+pwd
+pwd
+dir
+cdup
+dir
+help
+find er
+find er.py
+help
+mkdir rez
+dir
+cd erfolder
+pwd
+rmdir rez
+cdup
+rmdir rez
+dir
+pwd
+cd erfolder
+pwd
+dir
+compress er.txt
+dir
+read er.txt.zip
+run er.txt.zip
+dir
+help
+delete er.txt
+dir
+decompress er.txt.zip
+dir
+read er.txt
+help
+pwd
+dir
+dir
+mkdir erfolder
+dir
+mkdir shabfolder
+dir
+cd erfolder
+create erf.py print("salam")
+create er.txt ineeee
+dir
+read er.txt
+run er.txt
+run erf.py
+help
+dir
+compress er.txt
+dir
+decompress er.txt
+decompress er.txt.zip
+dir
+compress erf.py
+create tt.txt hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+dir
+compress tt.txt
+help
+dir
+mkdir erfolder
+cd erfolder
+pwd
+create erf.py print("an")
+dir
+create er.txt errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+dir
+help
+dir
+rename er.txt erf.txt
+dir
+compress erf.txt
+storage
+dir
+delete erf.txt
+storage
+dir
+storage
+create ss.txt sssssssssssssssssss
+storage
+compress ss.txt
+dir
+delete ss.txt
+storage
+storage
+help
+storage
+mkdir erfolder
+storage
+create erf.py print("salam")
+storage
+compress erf.py
+create erf.txt yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+read erf.txt
+read erf.txt
+compress erf.txt
+storage
+create s.txt lllllllllllllllllllll
+storage
+compress s.txt
+delete s.txt
+help
+storage
+mkdir erfolder
+cd erfolder
+create erf.txt oooooooooooooooooooooooooooooo
+storage
+read erf.txt
+run erf.txt
+storage
+compress erf.txt
+storage
+delete erf.txt
+storage
+cls
+help
+dir
+create shab.txt jjjjjjjjjjjjjjjjjj
+create shab1.txt kkkkkkkkkkkkkkkkkkkkkk
+find shab1.txt
+find shab
+copy shab.txt erf.txt
+dir
+read erf.txt
+delete erf.txt
+run shab.txt
+help
+mkdir folder
+cd folder
+cdup
+mkdir uu
+dir
+cd folder
+cd uu
+pwd
+help
+create i.txt oooooooooooooooooooooooooooo
+rename i.txt ii.txt
+dir
+read ii.txt
+run ii.txt
+create i.py print("Q")
+dir
+run i.py
+dir
+help
+copy i.py y.txt
+read y.txt
+cdup
+dir
+rmdir uu
+dir
+cd folder
+pwd
+compress y.txt
+mkdir folder
+cd folder
+create o.py print("oo")
+dir
+run o.py
+create u.txt rfiemrovnrev
+dir
+read u.txt
+run u.txt
+help
+create y.txt kkkkdkfdkmf
+dir
+rename y.txt j.txt
+dir
+delete j.txt
+storage
+copy u.txt w.py
+dir
+run w.py
+read w.py
+dir
+find py
+compress o.py
+storage
+dir
+delete o.zip
+dir
+compress o.py
+dir
+delete o.py
+dir
+decompress o.zip
+schedule w.py 3
+mkdir dol
+cd dol
+create f.py print(1+2)
+dir
+create r.txt ooooooooooooooooooooooooooooooooo3333ooooooooo
+dir
+read r.txt
+run r.txt
+run f.py
+read f.py
+mkdir t
+rmdir t
+dir
+help
+rename r.txt ff.txt
+dir
+copy f.py h.txt
+dir
+compress h.txt
+schedule f.py 8
+delete ff.txt
+dir
+delete h.txt
+dir
+decompress h.zip
+dir
+help
+mkdir folder
+create s.txt oooooooooooooooooooooo
+dir
+cd folder
+dir
+cdup
+compress s.txt
+storage
+dir
+delete s.txt
+dir
+decompress s.zip
+dir
+create k.py print(2+4)
+dir
+delete s.zip
+delete s.txt
+dir
+storage
+compress k.py
+dir
+delete k.py
+dir
+decompress k.zip
+dir
+delete k.zip
+dir
+schedule k.py
+schedule k.py 3
+read k.py
+run k.py
+help
+dir
+create j.txt
+create j.txt hhhhhhhhhhhhh
+dir
+compress j.txt
+dir
+delete j.txt
+rmdir folder
+dir
+decompress j.zip
+dir
+read j.txt
+run j.txt
+copy k.py l.txt
+read l.txt
+dir
+help
+fomat
+format
+dir
+exit
+create h.c cout<<"d";
+read h.c
+run h.c
