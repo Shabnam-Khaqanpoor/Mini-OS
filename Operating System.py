@@ -1,5 +1,4 @@
 import os
-import struct
 import time
 import zlib
 
@@ -10,7 +9,8 @@ NUM_BLOCKS = 1024
 FAT_TABLE_SIZE = NUM_BLOCKS
 ROOT_DIR_SIZE = 64
 
-# Initialize the file system
+
+# Initialize the file system--------------------------------------------------------------------------------------------
 class FileSystem:
     def __init__(self):
         try:
@@ -22,6 +22,7 @@ class FileSystem:
         except Exception as e:
             print(f"Initialization error: {e}")
 
+    # -----------------------------------------------------------------------------------------------------------------------
     def format_disk(self):
         try:
             # Create and format the virtual disk
@@ -35,6 +36,7 @@ class FileSystem:
         except IOError as e:
             print(f"Error formatting disk: {e}")
 
+    # -----------------------------------------------------------------------------------------------------------------------
     def load_disk(self):
         try:
             # Load the existing disk file
@@ -45,6 +47,7 @@ class FileSystem:
         except IOError as e:
             print(f"Error loading disk: {e}")
 
+    # -----------------------------------------------------------------------------------------------------------------------
     def allocate_block(self):
         try:
             # Allocate a free block from FAT
@@ -56,6 +59,7 @@ class FileSystem:
         except Exception as e:
             print(f"Error allocating block: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def free_block(self, block_index):
         try:
             # Free a block in FAT
@@ -63,6 +67,7 @@ class FileSystem:
         except IndexError as e:
             print(f"Error freeing block: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def write_block(self, block_index, data):
         try:
             if len(data) > BLOCK_SIZE:
@@ -72,6 +77,7 @@ class FileSystem:
         except Exception as e:
             print(f"Error writing block: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def read_block(self, block_index):
         try:
             self.disk.seek(block_index * BLOCK_SIZE)
@@ -80,6 +86,7 @@ class FileSystem:
             print(f"Error reading block: {e}")
             return b''
 
+    # -------------------------------------------------------------------------------------------------------------------
     def create_file(self, filename, content):
         try:
             dir_content = self.navigate_to_current_dir()
@@ -105,6 +112,7 @@ class FileSystem:
         except Exception as e:
             print(f"Error creating file: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def delete_file(self, filename):
         try:
             dir_content = self.navigate_to_current_dir()
@@ -119,6 +127,7 @@ class FileSystem:
         except Exception as e:
             print(f"Error deleting file: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def rename_file(self, old_name, new_name):
         try:
             dir_content = self.navigate_to_current_dir()
@@ -135,6 +144,7 @@ class FileSystem:
         except Exception as e:
             print(f"Error renaming file: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def read_file(self, filename):
         try:
             dir_content = self.navigate_to_current_dir()
@@ -148,6 +158,7 @@ class FileSystem:
         except Exception as e:
             print(f"Error reading file: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def run_file(self, filename):
         try:
             dir_content = self.navigate_to_current_dir()
@@ -167,6 +178,7 @@ class FileSystem:
         except Exception as e:
             print(f"Error running file: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def list_files(self):
         try:
             dir_content = self.navigate_to_current_dir()
@@ -176,6 +188,7 @@ class FileSystem:
         except Exception as e:
             print(f"Error listing files: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def mkdir(self, foldername):
         try:
             dir_content = self.navigate_to_current_dir()
@@ -188,6 +201,7 @@ class FileSystem:
         except Exception as e:
             print(f"Error creating folder: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def rmdir(self, foldername):
         try:
             dir_content = self.navigate_to_current_dir()
@@ -204,6 +218,7 @@ class FileSystem:
         except Exception as e:
             print(f"Error removing folder: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def cd(self, foldername):
         try:
             if foldername == "..":
@@ -224,6 +239,7 @@ class FileSystem:
         except Exception as e:
             print(f"Error changing directory: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def cdup(self):
         try:
             if self.current_dir == "/":
@@ -235,12 +251,14 @@ class FileSystem:
         except Exception as e:
             print(f"Error moving to parent directory: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def pwd(self):
         try:
             print(f"Current directory: {self.current_dir}")
         except Exception as e:
             print(f"Error displaying current directory: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def navigate_to_current_dir(self):
         try:
             parts = [p for p in self.current_dir.split("/") if p]
@@ -252,6 +270,7 @@ class FileSystem:
             print(f"Error navigating to current directory: {e}")
             return {}
 
+    # -------------------------------------------------------------------------------------------------------------------
 
     def compress_file(self, filename):
         try:
@@ -270,6 +289,7 @@ class FileSystem:
         except Exception as e:
             print(f"Error compressing file: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def decompress_file(self, filename):
         try:
             dir_content = self.navigate_to_current_dir()
@@ -291,6 +311,7 @@ class FileSystem:
         except Exception as e:
             print(f"Error decompressing file: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def schedule_file(self, filename, delay):
         try:
             dir_content = self.navigate_to_current_dir()
@@ -304,6 +325,7 @@ class FileSystem:
         except Exception as e:
             print(f"Error scheduling file: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def log_command(self, command):
         try:
             with open(self.log_file, 'a') as log:
@@ -311,6 +333,7 @@ class FileSystem:
         except Exception as e:
             print(f"Error logging command: {e}")
 
+    # -------------------------------------------------------------------------------------------------------------------
     def help_menu(self):
         try:
             print("Available commands:")
@@ -336,6 +359,7 @@ class FileSystem:
         except Exception as e:
             print(f"Error displaying help menu: {e}")
 
+    # -----------------------------------------------------------------------------------------------------------------------
     def shutdown(self):
         try:
             self.disk.close()
@@ -343,7 +367,8 @@ class FileSystem:
         except Exception as e:
             print(f"Error shutting down the disk: {e}")
 
-# Command line interface
+
+# Command line interface------------------------------------------------------------------------------------------------
 def main():
     try:
         fs = FileSystem()
@@ -409,6 +434,7 @@ def main():
                 print(f"Error executing command '{cmd}': {e}")
     except Exception as e:
         print(f"Fatal error: {e}")
+
 
 if __name__ == "__main__":
     main()
