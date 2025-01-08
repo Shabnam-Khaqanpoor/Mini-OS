@@ -1,0 +1,77 @@
+help
+create s.text sal
+create s.text sal
+dir
+help
+cwd
+pwd
+help
+pwd
+create s.txt sal
+cdup
+cdup
+create s.txt sal
+cd s
+dir
+rmd
+help
+format
+creat s.txt s
+create s.txt s
+help
+format
+create s.txt salam
+format
+create s.txt salam
+run s.txt
+create s.txt
+create s.txt l
+run s.txt
+format
+create l.txt l
+run l.txt
+create l.txt l
+run l.txt
+help
+format
+create d l.txt
+read d
+dir
+delete l.txt
+cwd
+pwd
+cd d
+dir
+delete l.txt
+delete d
+run l.txt
+create l n.txt
+run l
+help
+pwd
+hgbjnkm
+format
+create f d.txt
+read f
+read d.txt
+dir
+find d
+find f
+help
+format
+create f d.txt
+help
+format
+create f d.txt
+read f
+rename f l
+dir
+run l
+cd l
+pwd
+create m.txt m
+copy m.txt l
+help
+create m.txt n
+create f l.txt
+copy m.txt f
