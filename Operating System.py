@@ -397,8 +397,7 @@ class FileSystem:
 
             calculate_size(self.root_dir)
 
-            free_space = total_space - used_space
-            print(f"{free_space} bytes / {total_space} bytes are still empty.")
+            print(f"{used_space} bytes / {total_space} bytes used.")
         except Exception as e:
             print(f"Error checking storage: {e}")
 

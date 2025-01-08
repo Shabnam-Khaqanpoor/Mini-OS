@@ -429,3 +429,6 @@ exit
 create h.c cout<<"d";
 read h.c
 run h.c
+storage
+create l.txt dd
+storage
