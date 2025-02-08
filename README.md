@@ -56,11 +56,13 @@ Features
 
 How to Run
 
-  Ensure you have Python installed.
+    Ensure you have Python installed.
 
-  Run the script using the command:  python Operating System.py
-
-  Use the provided commands to interact with the system.
+    Run the script using the command:  
+    
+      python Operating System.py
+      
+    Use the provided commands to interact with the system.
 
   Command Usage
 
