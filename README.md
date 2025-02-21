@@ -50,7 +50,7 @@ cd miniOS
 Start the file system simulation:
 
 ```bash
-python "Operating System.py"
+python Operating System.py
 ```
 
 ---
