@@ -1,107 +1,85 @@
-Operating System Simulation
+# miniOS
 
-Project Overview
+## 📂 Operating System File System Simulation
 
-This project is a simulation of a simple operating system's file management system. It provides basic functionalities such as creating, deleting, renaming, compressing, and scheduling files. Additionally, it supports directory management, disk formatting, and metadata storage.
+miniOS is a **file system simulation** implemented in Python, providing functionalities for file creation, deletion, renaming, compression, scheduling, and directory management. It simulates a **FAT-based** file system with **block-based storage**, including disk formatting and metadata management.
 
-Features
+---
 
-  Disk Management
+## 🚀 Features
 
-    Format disk (format_disk)
+✅ **Virtual Disk Management** with block-based allocation\
+✅ **File Operations**: Create, delete, rename, read, and execute files\
+✅ **Directory Management**: Create, remove, and navigate directories\
+✅ **Compression & Decompression** using **zlib**\
+✅ **File Scheduling**: Execute files after a time delay\
+✅ **Storage Management**: Check disk usage and available space\
+✅ **Command Logging** for auditing user actions
 
-    Load disk (load_disk)
+---
 
-    Save metadata (save_metadata)
+## 📁 Project Structure
 
-    Check storage space (check_storage)
+```
+miniOS/
+│── Operating System.py      # Core file system implementation
+│── disk.img                 # Virtual disk storage
+│── log.txt                  # Logs executed commands
+│── README.md                # Project documentation
+```
 
-  Block Management
+---
 
-    Allocate blocks (allocate_block)
+## 🔧 Installation & Setup
 
-    Free blocks (free_block)
+### **1️⃣ Prerequisites**
 
-    Write and read data to/from blocks (write_block, read_block)
+Ensure you have:
 
-  File Management
+- Python 3.x installed
 
-    Create, delete, rename, read, run files (create_file, delete_file, rename_file, read_file, run_file)
+### **2️⃣ Clone the Repository**
 
-    Copy files (copy_file)
+```bash
+git clone https://github.com/Shabnam2003/miniOS.git
+cd miniOS
+```
 
-    Compress and decompress files (compress_file, decompress_file)
+### **3️⃣ Running the File System**
 
-    Schedule file execution (schedule_file)
+Start the file system simulation:
 
-  Directory Management
+```bash
+python "Operating System.py"
+```
 
-    Create and remove directories (mkdir, rmdir)
+---
 
-    Change directory (cd, cdup)
+## 📌 Usage
 
-    Show current directory (pwd)
+### **Available Commands**
 
-  Utility Commands
+| Command                  | Description                             |
+| ------------------------ | --------------------------------------- |
+| `format`                 | Format the virtual disk                 |
+| `create <file> <data>`   | Create a new file with content          |
+| `delete <file>`          | Delete a file                           |
+| `rename <old> <new>`     | Rename a file                           |
+| `read <file>`            | Read file contents                      |
+| `run <file>`             | Execute Python code in a file           |
+| `dir`                    | List all files in the current directory |
+| `copy <src> <dest>`      | Copy a file                             |
+| `find <keyword>`         | Search for files by name                |
+| `mkdir <folder>`         | Create a new folder                     |
+| `rmdir <folder>`         | Remove an empty folder                  |
+| `cd <folder>`            | Change directory                        |
+| `cdup`                   | Move to the parent directory            |
+| `pwd`                    | Show the current directory              |
+| `compress <file>`        | Compress a file using zlib              |
+| `decompress <file>`      | Decompress a file                       |
+| `schedule <file> <time>` | Run a file after a delay (seconds)      |
+| `storage`                | Display disk usage                      |
+| `help`                   | Show available commands                 |
+| `exit`                   | Shut down the file system               |
 
-    List files (list_files)
-
-    Find files by keyword (find_file)
-
-    Log executed commands (log_command)
-
-    Display help menu (help_menu)
-
-    Shut down the system (shutdown)
-
-How to Run
-
-    Ensure you have Python installed.
-
-    Run the script using the command:  
-    
-      python Operating System.py
-      
-    Use the provided commands to interact with the system.
-
-  Command Usage
-
-    format - Formats the disk.
-
-    create <file> <data> - Creates a new file with specified content.
-
-    delete <file> - Deletes a file.
-
-    rename <old> <new> - Renames a file.
-
-    read <file> - Reads the content of a file.
-
-    run <file> - Executes a file.
-
-    dir - Lists all files and folders in the current directory.
-
-    copy <src> <dest> - Copies a file.
-
-    find <keyword> - Searches for files by keyword.
-
-    mkdir <folder> - Creates a new directory.
-
-    rmdir <folder> - Removes an empty directory.
-
-    cd <folder> - Changes to a specified directory.
-
-    cdup - Moves to the parent directory.
-
-    pwd - Displays the current directory path.
-
-    compress <file> - Compresses a file.
-
-    decompress <file> - Decompresses a file.
-
-    schedule <file> <time> - Schedules a file to run after a delay.
-
-    storage - Displays disk usage information.
-
-    help - Shows available commands.
-
-    exit - Shuts down the system.
+---
