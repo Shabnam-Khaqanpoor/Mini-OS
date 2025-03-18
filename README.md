@@ -1,8 +1,8 @@
-# miniOS
+# mini OS
 
 ## 📂 Operating System File System Simulation
 
-miniOS is a **file system simulation** implemented in Python, providing functionalities for file creation, deletion, renaming, compression, scheduling, and directory management. It simulates a **FAT-based** file system with **block-based storage**, including disk formatting and metadata management.
+mini OS is a **file system simulation** implemented in Python, providing functionalities for file creation, deletion, renaming, compression, scheduling, and directory management. It simulates a **FAT-based** file system with **block-based storage**, including disk formatting and metadata management.
 
 ---
 
