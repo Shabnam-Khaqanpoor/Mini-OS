@@ -1,24 +1,24 @@
 # Mini OS
 
-## 📂 Operating System File System Simulation
+##  Operating System File System Simulation
 
 Mini OS is a **file system simulation** implemented in Python, providing functionalities for file creation, deletion, renaming, compression, scheduling, and directory management. It simulates a **FAT-based** file system with **block-based storage**, including disk formatting and metadata management.
 
 ---
 
-## 🚀 Features
+##  Features
 
-✅ **Virtual Disk Management** with block-based allocation\
-✅ **File Operations**: Create, delete, rename, read, and execute files\
-✅ **Directory Management**: Create, remove, and navigate directories\
-✅ **Compression & Decompression** using **zlib**\
-✅ **File Scheduling**: Execute files after a time delay\
-✅ **Storage Management**: Check disk usage and available space\
-✅ **Command Logging** for auditing user actions
+ **Virtual Disk Management** with block-based allocation\
+ **File Operations**: Create, delete, rename, read, and execute files\
+ **Directory Management**: Create, remove, and navigate directories\
+ **Compression & Decompression** using **zlib**\
+ **File Scheduling**: Execute files after a time delay\
+ **Storage Management**: Check disk usage and available space\
+ **Command Logging** for auditing user actions
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 miniOS/
@@ -32,20 +32,20 @@ miniOS/
 
 ## 🔧 Installation & Setup
 
-### **1️⃣ Prerequisites**
+### ** Prerequisites**
 
 Ensure you have:
 
 - Python 3.x installed
 
-### **2️⃣ Clone the Repository**
+### ** Clone the Repository**
 
 ```bash
 git clone https://github.com/Shabnam-Khaqanpoor/mini-OS.git
 cd miniOS
 ```
 
-### **3️⃣ Running the File System**
+### ** Running the File System**
 
 Start the file system simulation:
 
@@ -55,7 +55,7 @@ python Operating System.py
 
 ---
 
-## 📌 Usage
+##  Usage
 
 ### **Available Commands**
 
